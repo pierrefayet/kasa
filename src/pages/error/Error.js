@@ -1,9 +1,15 @@
 import React from 'react';
+import './error.scss';
+import Header from '../../component/header/Header';
 
 function Error() {
-    return (
-        <h1>404</h1>
-    );
+  return (
+    <div>
+      <Header />
+      <div>
+        <h1>404</h1></div>
+    </div>
+  );
 }
 
 export default Error;
