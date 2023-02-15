@@ -1,4 +1,4 @@
-import Homepage from './pages/Homepage/Homepage';
+import Homepage from './pages/homepage/Homepage';
 import Error from './pages/error/Error';
 import About from './pages/about/About';
 import Accomodation from "./pages/accomodation/Accomodation";
