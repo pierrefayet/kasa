@@ -1,2 +1,30 @@
 @import '../../sass/main.scss';
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-primary;
+}
+
+._nav {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+    font-weight: 500;
+    font-size: 24px;
+    .link {
+        position: relative;
+        color: $color-secondary;
+        &:hover::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $color-secondary;
+        }
+    }
+}

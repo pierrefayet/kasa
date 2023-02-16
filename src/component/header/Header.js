@@ -1,15 +1,18 @@
 import "./header.scss"
 import logo from '../../asset/LOGO.png'
-import Navbar from '../navbar/Navbar'
+
 
 export default function Header() {
     return (
-        <header>
-            <div>
-                <img src={logo} alt="logo Kasa, site de location d'appartement"></img>
-            </div>
-            <Navbar/>
+        <header className="header">
+                <div className="_logo">
+                    <img src={logo} alt="logo Kasa, site de location d'appartement"></img>
+                </div>
+                <nav className="_nav">
+                    <div className="link">Accueil</div>
+                    <div className="link">A Propos</div>
+                </nav>
         </header>
-    )
+    );
 }
 
