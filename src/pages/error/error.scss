@@ -1,0 +1,28 @@
+@import '../../sass/main.scss';
+
+.errorPage {
+    text-align: center;
+    &_content_title{
+        color: $secondary;
+        margin: 0;
+        font-size: 288px;
+        font-weight: 700;
+        background-color: $primary;
+    }
+    .errorPage_content_message {
+        color: $secondary;
+        font-weight: 500;
+        font-size: 36px;
+    }
+    .errorPageReturn {
+        text-align: center;
+        font-weight: 500;
+        margin-top: 200px;
+        font-size: 18px;
+        color: $secondary;
+        text-decoration: underline;
+    }
+}
+
+
+

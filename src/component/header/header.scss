@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $color-primary;
+    background-color: $primary;
+    margin: 40px 100px 0 100px;
 }
 
 ._nav {
@@ -15,7 +16,7 @@
     font-size: 24px;
     .link {
         position: relative;
-        color: $color-secondary;
+        color: $secondary;
         &:hover::after {
             content: '';
             display: block;
@@ -24,7 +25,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background-color: $color-secondary;
+            background-color: $secondary;
         }
     }
 }
