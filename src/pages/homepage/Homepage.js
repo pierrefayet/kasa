@@ -1,9 +1,15 @@
 import React from 'react';
-
-function Homepage() {
+import Header from "../../component/header/Header";
+//import HousingCardGallery from "../../component/HousingCardGallery/HousingCardGallery";
+import Footer from '../../component/footer/Footer';
+import Banner from '../../component/banner/Banner'
+export default function Homepage() {
 return (
-    <h1>coucou</h1>
+    <div>
+    <Header />
+    <Banner />
+    <Footer />
+    </div>
 );
 }
 
-export default Homepage;

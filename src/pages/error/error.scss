@@ -2,14 +2,14 @@
 
 .errorPage {
     text-align: center;
-    &_content_title{
+    &_content-title{
         color: $secondary;
         margin: 0;
         font-size: 288px;
         font-weight: 700;
         background-color: $primary;
     }
-    .errorPage_content_message {
+    .errorPage_content-message {
         color: $secondary;
         font-weight: 500;
         font-size: 36px;
@@ -22,6 +22,9 @@
         color: $secondary;
         text-decoration: underline;
     }
+
+}
+.qzefz {
 }
 
 
