@@ -9,7 +9,7 @@ export default function ErrorPage() {
       <Header />
         <h1 className='errorpage__content-title'>404</h1>
         <p className='errorpage__content-message'>Oups! La page que vous demandez n'existe pas.</p>  
-        <Link to="/pages/homepage/Homepage" className='errorpage__return'> Retourner à la page d'accueil</Link>      
+        <Link to="/" className='errorpage__return'> Retourner à la page d'accueil</Link>      
       </div>
   );
 }

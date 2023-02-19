@@ -9,10 +9,10 @@ export default function Header() {
                 <img src={logo} alt="logo Kasa, site de location d'appartement"></img>
             </div>
             <nav className="_nav">
-                <Link to={`/pages/homepage/Homepage`} className="housing_card-link">  
+                <Link to={`/`} className="housing_card-link">  
                     <div className="link">Accueil</div>
                 </Link> 
-                <Link to={`/pages/about/About`} className="housing_card-link">     
+                <Link to={`/about/About`} className="housing_card-link">     
                     <div className="link">A Propos</div>
                 </Link>    
             </nav>
