@@ -6,15 +6,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
 	{
-		path: "/pages/homepage/Homepage",
-		element: <Homepage />
+		path: "/",
+		element: <Homepage />,
+		exact: true
 	},
 	{
-		path: "/accomodation/Accomodation/:id",
+		path: "accomodation/Accomodation/:id",
 		element: <Accomodation />
 	},
 	{
-		path: '/pages/about/About',
+		path: 'about/About',
 		element: <About />
 	},
 	{
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
 	},
 ]);
 
-function App() {
+export default function App() {
 	return (
 		<>
 			<RouterProvider router={router}/>
@@ -31,4 +32,3 @@ function App() {
 	);
 }
 
-export default App;
