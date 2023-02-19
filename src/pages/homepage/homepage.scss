@@ -1,0 +1,12 @@
+@import '../../sass/main.scss';
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+    gap: 60px;
+}
+a {
+    text-decoration: none;
+}

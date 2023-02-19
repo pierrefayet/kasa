@@ -6,15 +6,15 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/pages/homepage/Homepage",
 		element: <Homepage />
 	},
 	{
-		path: "/accomodation/:id",
+		path: "/accomodation/Accomodation/:id",
 		element: <Accomodation />
 	},
 	{
-		path: '/about',
+		path: '/pages/about/About',
 		element: <About />
 	},
 	{
