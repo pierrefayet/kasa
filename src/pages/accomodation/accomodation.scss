@@ -57,10 +57,6 @@
     }
   }
 
-ul {
-  list-style-type: none;
-}
-
 .content__header {
     display: flex;
     justify-content: space-between;
@@ -99,14 +95,15 @@ margin-top: 10px;
 .content__accomodation {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   width: 100%;
-  height: auto;
+
 }
 .content__collapse-item--equipments {
   padding: 10px;
   width: 50%;
-  height: auto;
+  margin-bottom: 200px;
+  height: 0;
   & p {
     margin: 0;
     padding: 2px;
@@ -116,7 +113,8 @@ margin-top: 10px;
 .content__collapse-item--description {
   width: 50%;
   margin-right: 96px;
-  height: auto;
+  height: 0;
+  margin-bottom: 200px;
 }
 
 .content__collapse-row {
