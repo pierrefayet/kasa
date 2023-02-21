@@ -1,5 +1,6 @@
 import React from 'react';
 import './error.scss';
+import '../../sass/base/setting.scss';
 import Header from '../../component/header/Header';
 import{Link} from "react-router-dom";
 

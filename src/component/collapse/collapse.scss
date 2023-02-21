@@ -1,69 +1,55 @@
 @import "../../sass/main.scss";
 
-.content__collapse {
-    
-    margin: 20px auto 100px;
-}
-.content__collapse-item--description {
-    margin-right: 50px;
+.container__collapse {
+    width: 100%;
+    margin-top: 30px;
+    height: auto;
 }
 
 
-.collapse-container {
-    position: relative;
-    width: 582px;
-    height: 52px;
-    border-radius: 10px;
-    background-color: $secondary;
+.header__collapse {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; 
-    margin-top: 10px; 
-    margin-bottom: 20px;
-    margin-right: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: auto;
+    background-color: $secondary;
 }
 
-.collapse-text {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 100%;
-    left: 0;
-    height:auto;
-    background-color: #F6F6F6;
-    border-radius: 10px;
-    
-
-}
-
-.collapse-header h2 {
+.header__collapse h3 {
     color: $primary;
-    font-size: 24px;
-    font-weight: bold;
+    padding-left: 10px;
+}
+
+.header__collapse img {
+    display: flex;
+    height: 23px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.collapse-content-wrapper {
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+
+}
+
+p {
     margin: 0;
 }
 
-.collapse-arrow {
-    position: absolute;
-    top:30%;
-    right: 20px;
-}
-.collapse-content {
-    display: flex;
-    width: 600px;
-    height: auto;
+.collapse-text {
     color: $secondary;
     font-size: 18px;
-    flex-direction: column;
     font-weight: bold;
-    letter-spacing: 1;
     line-height: 30px;
 }
 
 .rotate {
     transform: rotate(180deg);
+    padding-left: 10px;
 }
-

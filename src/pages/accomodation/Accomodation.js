@@ -4,7 +4,6 @@ import Carrousel from '../../component/carrousel/Carrousel';
 import Footer from '../../component/footer/Footer';
 import data from '../../data/logements.json';
 import Star from '../../component/stars/star';
-import VectorCollapse from '../../asset/VectorCollapse.png';
 import Collapse from '../../component/collapse/collapse';
 import { useParams } from 'react-router-dom';
 
@@ -23,7 +22,7 @@ export default function Accomodation() {
             <Header />
             <Carrousel pictures={accomodation.pictures} />
             <main className="content">
-                <section className="content__header">
+                <div className="content__header">
                     <div className="content__header--content">
                         <div className="content__header--title-wrapper">
                             <div className="content__header--title">{accomodation.title}</div>
@@ -48,21 +47,19 @@ export default function Accomodation() {
                             <Star rating={rating} />
                         </div>
                     </div>
-                </section>
-                <div className="content__collapse">
-                    <div className="content__collapse-item--description">
-                        <Collapse title="Description" content={accomodation.description} arrowImage={VectorCollapse} />
-
-                    </div>
-                    <div className="content__collapse-item--equipment">
-                        <Collapse title="Équipement" content= {
-                                accomodation.equipments.map((item, index) => {
-                                    return <p key={index}>{item}</p>
-                                })} arrowImage={VectorCollapse}>
-                            
-                        </Collapse>
-                    </div>
                 </div>
+                <section className='content__accomodation'>
+                        <div className="content__collapse-item--description">
+                            <Collapse title="Description" content={accomodation.description} arrowImage />
+                        </div>
+                        <div className="content__collapse-item--equipments">
+                            <Collapse title="Équipement" content= {
+                                    accomodation.equipments.map((item, index) => {
+                                        return <p key={index}>{item}</p>
+                                    })} arrowImage>
+                            </Collapse>
+                        </div>
+                </section>
             </main>
             <Footer />
         </div>
