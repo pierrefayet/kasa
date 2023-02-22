@@ -11,9 +11,8 @@ import data from '../../data/about.json';
 export default function About() {
     const collapseList = data.map((collapse, index) => {
         return (
-            <div>
+            <div key={index}>
             <Collapse
-                key={index}
                 title={collapse.title}
                 content={collapse.content}
                 arrowImage={VectorCollapse}

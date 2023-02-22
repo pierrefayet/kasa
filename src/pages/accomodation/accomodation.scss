@@ -4,7 +4,10 @@
   margin: 0 auto;
   width: 90%;
   margin-bottom: 200px;
-
+  height: auto;
+  @media screen and (max-width: 400px) {
+    margin-bottom: 0;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -13,20 +16,49 @@
   &__host {
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 900px) {
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 60px;
+      padding-top: 20px;
+    }
+    @media screen and (max-width: 400px) {
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-content: center;
+      height: 60px;
+    }
     &--items {
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 400px) {
+        width: 40%;
+        justify-content: flex-end;
+        padding-left: 0;
+      }
+      &--name {
         display: flex;
+        height: 93px;
+        width: 52px;
+        color: $secondary;
+        font-size: 22px;
+        font-weight: 500;
         align-items: center;
-        &--name {
-            display: flex;
-            height: 93px;
-            width: 52px;
-            color: $secondary;
-            font-size: 22px;
-            font-weight: 500;
-            align-items: center;
-            padding-right: 60px;
-            
+        padding-right: 60px;
+        @media screen and (max-width: 900px) {
+          font-size: 12px;
+          padding-right: 10px; ;
         }
+      }
+    }
+  }
+
+  .content__rating {
+    @media screen and (max-width: 400px) {
+      width: 60%;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -49,47 +81,71 @@
       margin-right: 10px;
       margin-top: 20px;
       color: $primary;
-    }
-  }
-
-  &-item {
-      margin-bottom: 20px;
-    }
-  }
-
-.content__header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  
-    &--content {
-      display: flex;
-      flex-direction: column;
-  
-      &--title-wrapper {
-        display: flex;
-        justify-content: flex-start;
+      @media screen and (max-width: 900px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 8px;
+        margin-top: 0;
+        padding-left: 5px;
+        padding-right: 5px;
       }
     }
   }
 
+  &-item {
+    margin-bottom: 20px;
+  }
+}
+
+.content__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+  &--content {
+    display: flex;
+    flex-direction: column;
+
+    &--title-wrapper {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
 .content__header--title {
-margin-top: 30px;
-font-size: 36px;
-color: $secondary;
-font-weight: bold;
+  margin-top: 30px;
+  font-size: 36px;
+  color: $secondary;
+  font-weight: bold;
+  @media screen and (max-width: 900px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 18px;
+  }
 }
 
 .content__header--location {
-font-size: 18px;
-color: $secondary;
-margin-top: 10px;
+  font-size: 18px;
+  color: $secondary;
+  margin-top: 10px;
+  @media screen and (max-width: 900px) {
+    font-size: 14px;
+  }
 }
 
 .round-image {
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  @media screen and (max-width: 400px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .content__accomodation {
@@ -97,7 +153,12 @@ margin-top: 10px;
   justify-content: center;
   align-items: baseline;
   width: 100%;
-
+  height: auto;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 }
 .content__collapse-item--equipments {
   padding: 10px;
@@ -108,13 +169,26 @@ margin-top: 10px;
     margin: 0;
     padding: 2px;
   }
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-top: 0;
+    height: auto;
+    padding: 0;
+  }
 }
 
 .content__collapse-item--description {
   width: 50%;
   margin-right: 96px;
   height: 0;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
 }
 
 .content__collapse-row {
@@ -122,7 +196,10 @@ margin-top: 10px;
   flex-direction: row;
 }
 
-
 .star img {
   margin-right: 10px;
+  @media screen and (max-width: 400px) {
+    width: 15px;
+    height: 15px;
+  }
 }

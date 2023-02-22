@@ -1,6 +1,10 @@
 @import '../base/fonts';
 @import '../base/mixin.scss';
 
+body {
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }

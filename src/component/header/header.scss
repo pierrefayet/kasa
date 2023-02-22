@@ -5,19 +5,35 @@
     align-items: center;
     justify-content: space-between;
     background-color: $primary;
-    margin: 0 auto;
-    padding: 20px 5%;
+    margin: 1% 5% 30px 5%;
+    width: 90%;
+}
+
+._logo img {
+    @media screen and (max-width: 900px) {
+        max-width: 100px;
+    }
 }
 
 ._nav {
     display: flex;
     align-items: center;
-    gap: 57px;
     font-weight: 500;
     font-size: 24px;
+    @media screen and (max-width: 900px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 10px;
+    }   
     .link {
+        display: flex;
         position: relative;
         color: $secondary;
+        margin-left: 20px;
+        @media screen and (max-width: 400px) {
+            margin-left: 10px;
+        } 
         &:hover::after {
             content: '';
             display: block;

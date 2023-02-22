@@ -2,19 +2,36 @@
 
 .errorpage {
     text-align: center;
+    margin-top: 30px;
+    .errorPage__content {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 900px) {
+            font-size: 96px;
+        } 
+    }
+
     h1 {
         color: $secondary;
         margin: 0;
         font-size: 288px;
         font-weight: 700;
         background-color: $primary;
+        @media screen and (max-width: 900px) {
+            font-size: 96px;
+        }  
     }
-    .errorpage__content-message {
+    .errorPage__content-message {
         color: $secondary;
         font-weight: 500;
         font-size: 36px;
+        @media screen and (max-width: 900px) {
+            font-size: 20px;
+        }  
     }
-    .errorpage__return {
+    .errorPage__return {
         text-align: center;
         font-weight: 500;
         margin-top: 200px;

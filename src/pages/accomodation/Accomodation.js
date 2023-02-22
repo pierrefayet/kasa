@@ -6,15 +6,15 @@ import data from '../../data/logements.json';
 import Star from '../../component/stars/star';
 import Collapse from '../../component/collapse/collapse';
 import { useParams } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 export default function Accomodation() {
     const { id } = useParams();
     const accomodation = data.find((item) => item.id === id);
-
+    
     if (!accomodation) {
-        return <div className="not-found"></div>;
+        return <Navigate to="/error/Error" />;
     }
-
     const rating = parseInt(accomodation.rating);
 
     return (

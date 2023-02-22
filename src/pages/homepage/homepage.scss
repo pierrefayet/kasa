@@ -1,9 +1,18 @@
 @import '../../sass/main.scss';
 
 .container_home {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px;
-    gap: 60px;
-}
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px;
+        gap: 60px;
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            height: auto;
+            border-radius: 10px;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+    
+

@@ -14,20 +14,35 @@
     border-radius: 5px;
     margin: 0 auto;
     width: auto;
+    height: 41.25px;
     background-color: $secondary;
+    @media screen and (max-width: 400px) {
+        height: 30px;
+    }
 }
 
 .header__collapse h3 {
     color: $primary;
     padding-left: 10px;
+    @media screen and (max-width: 400px) {
+        font-size: 13px;
+    }
 }
 
 .header__collapse img {
     display: flex;
-    height: 23px;
+    height: 20px;
     padding-right: 10px;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    @media screen and (max-width: 900px) {
+        height:auto;
+        width: 25px;
+    }
+    @media screen and (max-width: 400px) {
+        height:auto;
+        width: 15px;
+    }
 }
 
 .collapse-content-wrapper {
@@ -46,6 +61,9 @@ p {
     font-weight: bold;
     line-height: 30px;
     padding: 20px 11px 20px 10px;
+    @media screen and (max-width: 400px) {
+        font-size: 12px;
+    }
 }
 
 .rotate {
