@@ -14,11 +14,11 @@ export default function Collapse({ title, content, arrowImage }) {
     <div className="container__collapse">
       <div className='header__collapse'>
         <h3>{title}</h3>
-        <img src={arrowImage= Vector} alt="Arrow" className={isOpen ? 'rotate' : 'close'} onClick={handleHeaderClick}/>
+        <img src={arrowImage= Vector} alt="Arrow" className={isOpen ? 'rotate' : ''} onClick={handleHeaderClick}/>
       </div>
-      <p className={`collapse-arrow ${isOpen ? 'open' : 'close'}`}></p>
+      <p className='collapse-arrow'></p>
       
-      <div className="collapse-content-wrapper"  style={{ backgroundColor: !isOpen ? '#fff' : '#f6f6f6' }}>
+      <div className={`collapse-content-wrapper ${isOpen ? 'open' : 'close'}`} >
         {isOpen && <div className="collapse-text">{content}</div>}
       </div>
     </div>

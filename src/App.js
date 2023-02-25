@@ -3,19 +3,19 @@ import Error from './pages/error/Error';
 import About from './pages/about/About';
 import Accomodation from "./pages/accomodation/Accomodation";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import { rootPath, accomodationPath, aboutPath } from "./routes";
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: rootPath,
 		element: <Homepage />,
 		exact: true
 	},
 	{
-		path: "accomodation/Accomodation/:id",
+		path: accomodationPath,
 		element: <Accomodation />
 	},
 	{
-		path: "about/About",
+		path: aboutPath,
 		element: <About />
 	},
 	{
