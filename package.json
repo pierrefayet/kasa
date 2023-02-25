@@ -1,7 +1,7 @@
 {
   "name": "kasa",
   "version": "0.1.0",
-  "homepage": "https://pierrefayet.github.io/kasa",
+  "homepage": "https://pierrefayet.github.io",
   "private": true,
   "dependencies": {
     "eslint": "^8.34.0",
